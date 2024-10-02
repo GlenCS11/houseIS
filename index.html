@@ -17,72 +17,10 @@
 
     <main class="main">
     	<img src="" alt="Video tour">
-        <a href="Admin.html" id="login" class="btn btn-primary">Admin</a>
-	<a href="user.html" id="login" class="btn btn-primary">User</a>
+        <a href="Admin.html">Admin</a>
+	<a href="user.html">User</a>
     </main>
     </div>
-    <!-- Modal Structure -->
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="messageModalLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body modal_design">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="js/bootstrap.bundle.js"></script>
-
-    <script>
-    document.getElementById('login').addEventListener('click', function() {
-        const modalTitle = document.getElementById('messageModalLabel');
-        const modalBody = document.querySelector('#messageModal .modal-body');
-        
-        modalTitle.textContent = 'Login Page';
-        modalBody.innerHTML = `
-            <form method="POST" action="login.php">
-                <div class="form-group">
-                    <label for="name">Full name:</label>
-                    <input type="text" name="name" id="name" class="form-control" required>
-                </div>
-                <div class="form-group mt-3">
-                    <label for="Pass">Password:</label>
-                    <input type="password" name="Pass" id="Pass" class="form-control" required>
-                </div>
-                <input type="submit" name="Login" class="btn btn-primary mt-3">
-            </form>`;
-    });
- 
-    document.getElementById('signin').addEventListener('click', function() {
-        const modalTitle = document.getElementById('messageModalLabel');
-        const modalBody = document.querySelector('#messageModal .modal-body');
-        
-        modalTitle.textContent = 'Signin Page';
-        modalBody.innerHTML = `
-            <form method="POST" action="Signin.php">
-                <div class="form-group">
-                    <label for="name">Full name:</label>
-                    <input type="text" name="name" id="name" class="form-control" required>
-                </div>
-                <div class="form-group mt-3">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" class="form-control" required>
-                </div>
-                <div class="form-group mt-3">
-                    <label for="Pass">Password:</label>
-                    <input type="password" name="Pass" id="Pass" class="form-control" required>
-                </div>
-                <input type="submit" name="Signin" class="btn btn-secondary mt-3">
-            </form>`;
-    });
-    </script>
 
 </body>
 </html>
