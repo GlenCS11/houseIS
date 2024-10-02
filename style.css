@@ -1,0 +1,19 @@
+nav a{
+	text-decoration: none;
+	padding: 10px 5px;
+	margin-top: 10px;
+	background-color: #64787e;
+	display: block;
+	color: white;
+	border-radius: 20px;
+	transition: background-color 0.5s ease;
+	border-style: outset;
+	border-width: 5px;
+}
+nav a:hover{
+	color: white;
+	background-color: black;
+}
+nav a img{
+	margin-right: 5px;
+}
